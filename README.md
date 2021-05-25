@@ -4,7 +4,7 @@ ELK Stack Project
 
 The files in this repository were used to configure the network depicted below.
 
-!(https://github.com/fpanes/Diagrams/FrancisPanes_CloudSecurity.png)
+![alt text](https://github.com/fpanes/Diagrams/FrancisPanes_CloudSecurity.png "Diagrams")git 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -24,15 +24,16 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting traffic to the network.
-- _TODO: What aspect of security do load balancers protect? Availability, Web Traffic, Web Security What is the advantage of a jump box?_ Automation, Security, Network Segmentation, Access Control
+- What aspect of security do load balancers protect? Availability, Web Traffic, Web Security 
+- What is the advantage of a jump box? Automation, Security, Network Segmentation, Access Control
 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
-- _TODO: What does Filebeat watch for?_Filebeat monitors the log files and collects log events, and sends to Elasticsearch or Logstash for indexing.
-- _TODO: What does Metricbeat record?_Metricbeat takes the metrics and statistics that it collects and sends them to Elasticsearch or Logstash.
+- What does Filebeat watch for? Filebeat monitors the log files and collects log events, and sends to Elasticsearch or Logstash for indexing.
+- What does Metricbeat record? Metricbeat takes the metrics and statistics that it collects and sends them to Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
-_Note: Use the (http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+Note: Use the (http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -48,17 +49,18 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 My home IP Address
 Machines within the network can only be accessed by Jumpbox.
-Jumpbox 10.0.0.6
+Jumpbox 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | Yes                 | My home IP           |
-| Web-1    | no                  | 10.0.0.6             |
+| Web-1    | no                  | 10.0.0.5             |
 | Web-2    | no                  | 10.0.0.6             |
 | ELK      | yes                 | 10.1.0.4/Home IP     |
-| Load Balancer | Load Balancer  | MY home IP           |
+| Load Balancer | Load Balancer  | My home IP           |
+
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
