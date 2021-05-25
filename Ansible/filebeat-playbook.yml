@@ -5,7 +5,7 @@
   tasks:
 
   - name: download filebeat deb
-    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/f$
+    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat
 
   - name: install filebeat deb
     command: sudo dpkg -i filebeat-7.6.1-amd64.deb
