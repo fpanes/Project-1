@@ -55,11 +55,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | My home IP           |
-| Web-1    | no                  | 10.0.0.5             |
-| Web-2    | no                  | 10.0.0.6             |
-| ELK      | yes                 | 10.1.0.4/Home IP     |
-| Load Balancer | Load Balancer  | My home IP           |
+| Jump Box | No                 | My home IP           |
+| Web-1    | No                  | 10.0.0.5             |
+| Web-2    | No                  | 10.0.0.6             |
+| ELK      | No                 | 10.1.0.4/Home IP     |
+| Load Balancer | No  | My home IP           |
 
 ### Elk Configuration
 
