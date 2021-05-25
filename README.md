@@ -88,9 +88,8 @@ This ELK server is configured to monitor the following machines:
 - Web 2 (10.0.0.6)
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
-ELK, Web-1, Web-2 
-Filebeat and Metricbeat
+- ELK, Web 1, Web 2 
+- Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat is a lightweight shipper for forwarding and centralizing log data. Installed as an agent on your servers. Filebeat monitors the log files or locations that you specify, gathers log events, and forwards them either to Elasticsearch or Logstash for indexing.
