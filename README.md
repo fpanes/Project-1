@@ -99,7 +99,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the /etc/ansible/files/filebeat-config.yml file to /etc/filebeat/filebeat-playbook.yml.
+- Copy the [Filebeat Config](https://github.com/fpanes/Project-1/blob/main/Ansible/filebeat-config.yml) file to [Filebeat Playbook](https://github.com/fpanes/Project-1/blob/main/Ansible/filebeat-playbook.yml).
 - Update the filebeat-config.yml file to include 
 output.elasticsearch:
   #Array of hosts to connect to.
