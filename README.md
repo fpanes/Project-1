@@ -59,11 +59,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | No                 | Workstation Public IP           |
+| Jump Box | No                 | Local Machine Public IP           |
 | Web-1    | No                  | 10.0.0.5             |
 | Web-2    | No                  | 10.0.0.6             |
-| ELK      | No                 | 10.1.0.4/Workstation Public IP   |
-| Load Balancer | No  | Workstation Public IP           |
+| ELK      | No                 | 10.1.0.4/Local Machine Public IP   |
+| Load Balancer | No  | Local Machine Public IP           |
 
 ### Elk Configuration
 
