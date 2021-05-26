@@ -109,4 +109,4 @@ Answer the following questions to fill in the blanks:
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
   - The [Filebeat Config](https://github.com/fpanes/Project-1/blob/main/Ansible/filebeat-config.yml). 10.1.0.4:9200 is the ELK server that can install Filebeat. 
 - Which URL do you navigate to in order to check that the ELK server is running?
-  - RedAdmin@10.1.0.4: curl LocalMachinePublicIPAddress:5601/app/kibana
+  - RedAdmin@10.1.0.4: curl ELKServerPublicIPAddress:5601/app/kibana
