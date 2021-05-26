@@ -103,10 +103,10 @@ SSH into the control node and follow the steps below:
 - Update the [Filebeat Playbook](https://github.com/fpanes/Project-1/blob/main/Ansible/filebeat-playbook.yml) file to include where to install the ELK server with the Debian Package command and install filebeat in a particular directory with the copy module (/etc/filebeat).
 - Run the playbook, and navigate to Docker Metrics dashboard to check that the installation worked as expected
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_ .yml and to /files
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ The config.yml 
-- _Which URL do you navigate to in order to check that the ELK server is running?
-sysadmin@10.1.0.4: curl Myhomeip:5601/app/kibana
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+Answer the following questions to fill in the blanks:
+- Which file is the playbook? Where do you copy it? 
+  - YAML file is the playbook and to /files
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
+  - The config.yml 
+- Which URL do you navigate to in order to check that the ELK server is running?
+  - RedAdmin@10.1.0.4: curl LocalMachinePublicIPAddress:5601/app/kibana
