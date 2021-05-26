@@ -100,16 +100,8 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the [Filebeat Config](https://github.com/fpanes/Project-1/blob/main/Ansible/filebeat-config.yml) file to [Filebeat Playbook](https://github.com/fpanes/Project-1/blob/main/Ansible/filebeat-playbook.yml).
-- Update the filebeat-config.yml file to include 
-output.elasticsearch:
-  #Array of hosts to connect to.
- hosts: ["10.1.0.4:9200"]
-  username: "elastic"
-  password: "changeme” 
-
- setup.kibana:
-  host: "10.1.0.4:5601"
-- Run the playbook, and navigate to Kibana / Logs : Add log data / System logs / 5:Module Status to check that the installation worked.
+- Update the[Filebeat Playbook](https://github.com/fpanes/Project-1/blob/main/Ansible/filebeat-playbook.yml)file to include where to install the ELK server with the Debian Package command and install filebeat in a particular directory with the copy module (/etc/filebeat).
+- Run the playbook, and navigate to Docker metrics dashboard to check that the installation worked as expected
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_ .yml and to /files
