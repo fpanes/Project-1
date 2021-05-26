@@ -101,7 +101,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the [Filebeat Config](https://github.com/fpanes/Project-1/blob/main/Ansible/filebeat-config.yml) file to [Filebeat Playbook](https://github.com/fpanes/Project-1/blob/main/Ansible/filebeat-playbook.yml).
 - Update the[Filebeat Playbook](https://github.com/fpanes/Project-1/blob/main/Ansible/filebeat-playbook.yml)file to include where to install the ELK server with the Debian Package command and install filebeat in a particular directory with the copy module (/etc/filebeat).
-- Run the playbook, and navigate to Docker metrics dashboard to check that the installation worked as expected
+- Run the playbook, and navigate to Docker Metrics dashboard to check that the installation worked as expected
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_ .yml and to /files
